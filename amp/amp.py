@@ -1,5 +1,8 @@
 # Necessary libraries
 import numpy as np
+# TODO: update the comments. 
+# TODO: Update variable and function names. 
+# TODO: Use numpy arrays instead of lists in the SER.  
 class amp:
   def __init__(self, L, B):
     np.random.seed(0)
