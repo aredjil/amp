@@ -5,23 +5,23 @@ import time
 from amp.amp import amp
 #TODO: Take the snr, B, and L as a user input from the user 
 #TODO: Add usage message.
-B = 4
-n = 2**15
-R =1.6
+B:int = 4
+n:int = 2**15
+R:float =1.6
 # Number of sections
-L = int(n / B)
+L:int = int(n / B)
 
 my_amp = amp(L, B)
 
-snr = 15
-start = time.time()
+snr:int = 15
+start:float = time.time()
 
-ser_13 = my_amp.decode(snr, 1.3)
-ser_14 = my_amp.decode(snr, 1.4)
-ser_145 = my_amp.decode(snr, 1.45)
-ser_16 = my_amp.decode(snr, 1.6)
+ser_13:list[float] = my_amp.decode(snr, 1.3)
+ser_14:list[float] = my_amp.decode(snr, 1.4)
+ser_145:list[float] = my_amp.decode(snr, 1.45)
+ser_16:list[float] = my_amp.decode(snr, 1.6)
 
-end = time.time()
+end:float = time.time()
 
 print(f"The program took: {(end -start)/60} Seconds")
 
