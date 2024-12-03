@@ -7,7 +7,7 @@ from amp.amp import amp
 #TODO: Take the snr, B, and L as a user input from the user 
 #TODO: Add usage message.
 B:int = 4
-n:int = 2**5
+n:int = 2**16
 R:float =1.6
 # Number of sections
 L:int = int(n / B) 
