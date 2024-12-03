@@ -1,5 +1,6 @@
 # Necessary libraries
 import numpy as np
+# import matplotlib.pyplot as plt 
 # TODO: update the comments. 
 # TODO: Update variable and function names. 
 # TODO: Use numpy arrays instead of lists in the SER.  
@@ -190,5 +191,20 @@ class amp:
             break
         #a_t.append(a)
     return ser
+# def plot_dat(*data):
+#    for ser in data: 
+#       plt.plot(ser_13, label="R = 1.3", linestyle="dashed")
+#       plt.plot(ser_14, label="R = 1.4", linestyle="dashed")
+#       plt.plot(ser_145, label="R = 1.45", linestyle="dashed")
+#       plt.plot(ser_16, label="R = 1.6", linestyle="dashed")
+#       plt.xlabel("#iterations")
+#       plt.ylabel("Section Error Rate (SER)")
+#       plt.title(f"Section error rate vs number of iterations B={B}, L ={L}, and snr={snr}")
+#       plt.xlim(0, )
+#       plt.yscale("log")
+#       plt.legend(loc="best")
+#       plt.grid(True)
+#       plt.savefig("./ser.png")
+#     plt.show()
 if __name__ == "__main__":
     print(__name__)
